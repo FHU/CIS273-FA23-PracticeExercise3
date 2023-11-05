@@ -42,12 +42,12 @@ namespace PracticeExercise3
         {
             string result = "";
 
-            var currentNode = linkedList.Last;
+            var currentNode = linkedList.First;
 
             while (currentNode != null)
             {
                 result += currentNode.Value + "\n";
-                currentNode = currentNode.Previous;
+                currentNode = currentNode.Next;
             }
 
             return result;
